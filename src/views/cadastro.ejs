@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <%- include("partials/head.ejs")  %> 
+</head>
+<body>
+<%- include("partials/header.ejs")  %> 
+
+  
+
+  <main>
+    <div class="form-register">
+      <form action="/cadastrar/add" method="post" class="form">
+
+        <div class="title-register">
+          <i class="fa-solid fa-circle-user"></i>
+          <h2>Register</h2>
+        </div>
+
+        <div class="personal-data">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" class="nome" placeholder="Digite seu nome completo" autocomplete="off">
+        </div>
+
+        <div class="cpf-and-idade personal-data">
+          <div>
+            <label for="cpf">Cpf</label>
+            <input type="text" name="cpf" class="cpf" placeholder="000.000.000-00" autocomplete="off" maxlength="14">
+          </div>
+
+          <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" class="telefone" placeholder="(00) 0000-0000" autocomplete="off" maxlength="14">
+          </div>
+
+        </div>
+
+        <div class="personal-data">
+          <label for="email">Email</label>
+          <input type="email" name="email" class="email" placeholder="Exemplo@gmail.com" autocomplete="off">
+        </div>
+
+        <div class="cep-and-cidade personal-data">
+          <div>
+            <label for="cep">Cep</label>
+            <input type="text" name="cep" class="cep" placeholder="00000-000" autocomplete="off" maxlength="9">
+          </div>
+
+          <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" class="cidade" placeholder="Exemplo: Olinda" autocomplete="off">
+          </div>
+
+        </div>
+
+        <div class="button-register">
+          <button class="register-button" type="submit" >Cadastrar</button>
+        </div>
+
+      </form>
+    </div>
+  </main>
+
+  <%- include("partials/script.ejs")  %> 
+</body>
+</html>

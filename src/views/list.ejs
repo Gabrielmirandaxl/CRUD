@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <%- include("partials/head.ejs")  %> 
+</head>
+<body>
+<%- include("partials/header.ejs")  %> 
+
+<main>
+
+  <div class="pai">
+    
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nome</th>
+          <th scope="col">Email</th>
+          <th scope="col">Cpf</th>
+          <th scope="col">Telefone</th>
+          <th scope="col">Cep</th>
+          <th scope="col">Cidade</th>
+          <th scope="col">Ações</th>
+        
+          
+        </tr>
+      </thead>
+      <tbody>
+       <% users.forEach( user => { %>
+
+        <tr>
+          
+          <td><%= user.nome %></td>
+          <td><%= user.email %></td>
+          <td><%= user.cpf %></td>
+          <td><%= user.telefone %></td>
+          <td><%= user.cep %></td>
+          <td><%= user.cidade %></td>
+          <td class="acoes"> <a href="/update?id=<%= user.id %> " class="editar">Editar</a>  <a href="/delete/<%= user.id  %> "class="excluir">Excluir</a></td>
+         
+        </tr>
+
+       <% }) %>
+      </tbody>
+    </table>
+
+  </div>
+
+</main>
+
+
+</body>
+</html>
