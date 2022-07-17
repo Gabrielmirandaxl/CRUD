@@ -1,0 +1,263 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.title-system{
+  margin-top: 8em;
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  background-color: #34495e;
+  width: 100%;
+  height: 70px;
+  box-shadow: 0px 0px 5px #ffffff;
+}
+
+.header h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.header .nav .list-routers{
+  list-style: none;
+  display: flex;
+}
+
+.header .nav .list-routers li{
+  margin: 0px 0px 0px 15px;
+}
+
+.header .nav .list-routers li a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #3498db8f;
+  color: #ffffff81;
+  border-radius: 6px;
+  transition: 400ms;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+
+.header .nav .list-routers li a:hover{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #3498db;
+  color: #ffffff;
+  border-radius: 6px;
+  transition: 400ms;
+  
+}
+
+/* cadastro */
+
+main{
+  display: flex;
+  justify-content: center;
+}
+
+.form-register{
+  width: 500px;
+  height: 525px;
+  background-color:#2980b9;
+  border-radius: 6px;
+  color: #ffffff;
+  margin-top: 10px ;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form .personal-data label{
+  display: block;
+  margin: 0px 0px 5px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+form .title-register{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+form .title-register i{
+  font-size: 3em;
+  margin: 0px 0px 8px 0px;
+}
+
+
+form .title-register h2{
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form .personal-data{
+  margin: 9px 0px 0px 0px;
+}
+
+form .personal-data input{
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 8px 0px 8px 5px ;
+}
+
+.nome , .email{
+  width: 430px;
+}
+
+.cpf-and-idade, .cep-and-cidade{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3.6em;
+}
+
+.button-register{
+  margin-top: 35px;
+}
+
+.button-register .register-button{
+ width: 350px;
+ padding: 8px 0;
+ color: #ffffff86;
+ font-weight: bold;
+ background-color: #2ecc7091;
+ font-family: Arial, Helvetica, sans-serif;
+ border: none;
+ border-radius: 5px;
+ font-size: 1.1em;
+ cursor: pointer;
+ transition: 400ms;
+}
+
+
+.button-register .register-button:hover{
+  width: 350px;
+  padding: 8px 0;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #2ecc71;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: 400ms;
+  
+ }
+
+/* Validation */
+
+ .nome.error, .cpf.error, .telefone.error, .cep.error, .email.error, .cidade.error {
+  border: 1px solid red;
+ }
+
+ .error::placeholder{
+  color: red;
+ }
+
+ .list-label{
+  display: flex;
+  list-style: none;
+ }
+
+ .list-label li{
+  margin: 0px 0px 0px 20px;
+ }
+ 
+ .list-users{
+  width: 400px;
+  background-color: red;
+ }
+
+
+
+ .teste{
+  display: flex;
+  justify-content: space-between;
+  
+  padding: 10px 0px 10px 0px;
+ }
+
+
+
+ .cpf-title, .email-title{
+  margin: 0px 5px 0px 35px;
+ }
+
+.table{
+  margin-top: 2em;
+}
+
+
+thead tr:first-child{
+ background-color: #141414;
+ color: #ffffff;
+}
+
+tbody tr{
+  background-color: #141414;
+  color: #ffffff;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #ecf0f1;
+  color: #141414;
+}
+
+.acoes a{
+  margin: 5px;
+  text-decoration: none;
+}
+
+.acoes .editar{
+  background-color: #3498dbab;
+  color: #ffffffb4;
+  padding: 5px 14px 5px 14px;
+  border-radius: 7px;
+  transition: 400ms;
+  
+}
+
+.acoes .editar:hover{
+  background-color: #3498db;
+  color: #ffffff;
+  padding: 5px 14px 5px 14px;
+  border-radius: 7px;
+  transition: 400ms;
+  box-shadow: 0px 0px 10px  #3498db;
+}
+
+.acoes .excluir{
+  background-color: #c03a2bb2;
+  color: #ffffffb4;
+  padding: 5px 14px 5px 14px;
+  border-radius: 7px;
+  transition: 400ms;
+}
+
+.acoes .excluir:hover{
+  background-color: #c03a2b;
+  color: #fffffffd;
+  padding: 5px 14px 5px 14px;
+  border-radius: 7px;
+  transition: 400ms;
+  box-shadow: 0px 0px 10px  #c03a2b;
+}
+
+
