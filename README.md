@@ -67,14 +67,15 @@ $ npm run start
 <br>
 
 ## 🌐 aplicação
-![Peek 2022-06-19 12-50](https://user-images.githubusercontent.com/82064724/174489555-2eef3c16-3c6b-4a25-b593-a95753e097c2.gif)
+<img width="900" heigth="900"  src="https://github.com/Gabrielmirandaxl/CRUD/blob/main/src/public/gif/2022-07-17%2014-06-31%20(1).gif">
 
 <br>
 
 
 ## 🛠 tecnologias
 
-As seguintes ferramentas/tecnologias foram usadas na construção e teste do projeto. Ao clicar no ícone da tecnologia, você será redirecionado ao site oficial para instalação: <br>
+As seguintes ferramentas/tecnologias foram usadas na construção e teste do projeto.
+<br>
 
 | logo               | Framework                  | Version      |
 | :----------------- | :------------------------- | :----------: |
